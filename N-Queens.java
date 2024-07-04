@@ -44,3 +44,12 @@ class Solution {
         }
     }
 
+      
+    return true;
+}
+
+public void saveBoard(char[][] board, List<List<String>> allBoards) {
+    String row = "";
+    List<String> newBoard = new ArrayList<>();
+   
+    for(i
