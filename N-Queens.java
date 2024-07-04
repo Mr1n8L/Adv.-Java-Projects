@@ -37,3 +37,10 @@ class Solution {
             }
         }
  
+               //lower right
+       for(int c=col; c<board.length && r<board.length; c++, r++) {
+        if(board[r][c] == 'Q') {
+            return false;
+        }
+    }
+
