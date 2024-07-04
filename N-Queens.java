@@ -26,4 +26,14 @@ class Solution {
        for(int c=col; c<board.length && r>=0; r--, c++) {
            if(board[r][c] == 'Q') {
                return false;
-               
+            }
+        }
+       
+        //lower left
+        r = row;
+        for(int c=col; c>=0 && r<board.length; r++, c--) {
+            if(board[r][c] == 'Q') {
+                return false;
+            }
+        }
+ 
