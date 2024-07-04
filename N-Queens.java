@@ -79,3 +79,13 @@ public void helper(char[][] board, List<List<String>> allBoards, int col) {
             board[row][col] = '.';
         }
     }
+}
+  
+public List<List<String>> solveNQueens(int n) {
+    List<List<String>> allBoards = new ArrayList<>();
+    char[][] board = new char[n][n];
+   
+    helper(board, allBoards, 0);
+    return allBoards;
+}
+}
