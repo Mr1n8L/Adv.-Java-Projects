@@ -11,11 +11,19 @@ public class SudokuSolver {
             }
         }
 
-        //check in grid 
+        //check in grid
         int startrow = (row/3) * 3;
         int startcol = (col/3) * 3;
 
-        
+        for(int i=startrow; i<startrow + 3; i++){
+            for(int j=startcol; j<startcol + 3; j++){
+                if(board[i][j] == (char)('0' + num)){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 
 
     public boolean helper(char board[][], int row, int col){
