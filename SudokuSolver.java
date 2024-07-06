@@ -1,7 +1,9 @@
 public class SudokuSolver {
     public boolean helper(char board[][], int row, int col){
 
-
+        if(row == board.length){
+            return true;
+        }
 
         int newRow = 0;
         int newCol = 0;
@@ -27,7 +29,7 @@ public class SudokuSolver {
                         else{
                             board[row][col] = '.';
                         }
-        
+
             }
         }
         return false;
