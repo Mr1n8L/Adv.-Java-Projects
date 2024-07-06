@@ -10,8 +10,12 @@ public class SudokuSolver {
                 return false;
             }
         }
-        int sr = (row/3) * 3;
-        int sc = (col/3) * 3;
+
+        //check in grid 
+        int startrow = (row/3) * 3;
+        int startcol = (col/3) * 3;
+
+        
 
 
     public boolean helper(char board[][], int row, int col){
