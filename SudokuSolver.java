@@ -1,4 +1,19 @@
 public class SudokuSolver {
+    public boolean isSafe(char board[][], int row, int col, int num){
+
+        // check for row and column
+        for(int i=0; i<board.length; i++){
+            if(board[row][i] == (char)('0' + num)){
+                return false;
+            }
+            if(board[i][col] == (char)('0' + num)){
+                return false;
+            }
+        }
+        int sr = (row/3) * 3;
+        int sc = (col/3) * 3;
+
+
     public boolean helper(char board[][], int row, int col){
 
         if(row == board.length){
