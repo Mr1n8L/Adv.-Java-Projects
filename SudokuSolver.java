@@ -1,6 +1,8 @@
 public class SudokuSolver {
     public boolean helper(char board[][], int row, int col){
 
+
+
         int newRow = 0;
         int newCol = 0;
         if(col != board.length - 1){
@@ -28,6 +30,7 @@ public class SudokuSolver {
         
             }
         }
+        return false;
     }
     public void solveSudoku(char board[][]){
         helper(board, 0, 0)
