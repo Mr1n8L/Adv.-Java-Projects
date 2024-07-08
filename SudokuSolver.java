@@ -1,4 +1,5 @@
 public class SudokuSolver {
+//Sudoku Solver for a nXn matrix
     public boolean isSafe(char board[][], int row, int col, int num){
 
         // check for row and column
