@@ -28,7 +28,7 @@ public class SudokuSolver {
 
 
     public boolean helper(char board[][], int row, int col){
-        //helper
+        //helper class
 
         if(row == board.length){
             return true;
