@@ -28,7 +28,7 @@ public class SudokuSolver {
 
 
     public boolean helper(char board[][], int row, int col){
-        //helper class
+        //helper method
 
         if(row == board.length){
             return true;
@@ -64,7 +64,7 @@ public class SudokuSolver {
         return false;
     }
     public void solveSudoku(char board[][]){
-        //solving method calls helper 
+        //solving method calls helper method 
         helper(board, 0, 0)
 
     }
