@@ -64,7 +64,7 @@ public class SudokuSolver {
         return false;
     }
     public void solveSudoku(char board[][]){
-        //solving
+        //solving method 
         helper(board, 0, 0)
 
     }
