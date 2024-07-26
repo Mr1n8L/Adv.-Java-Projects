@@ -61,7 +61,7 @@ public class SudokuSolver {
 
             }
         }
-        return false;
+        return false; 
     }
     public void solveSudoku(char board[][]){
         //solving method calls helper method reccursively
