@@ -1,6 +1,7 @@
 //Question Available On LeetCode
 
 import java.util.*;
+//importing 
 
 class Solution {
     public boolean isSafe(int row, int col, char[][] board) {
